@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ImageView</key>
+		<string>picture1.jpg</string>
+		<key>name</key>
+		<string>北京</string>
+		<key>detail</key>
+		<string>中国的首都</string>
+	</dict>
+	<dict>
+		<key>ImageView</key>
+		<string>picture1.jpg</string>
+		<key>name</key>
+		<string>上海</string>
+		<key>detail</key>
+		<string>东方明珠</string>
+	</dict>
+	<dict>
+		<key>ImageView</key>
+		<string>picture1.jpg</string>
+		<key>name</key>
+		<string>香港</string>
+		<key>detail</key>
+		<string>97年回归中国，欢呼！</string>
+	</dict>
+</array>
+</plist>

@@ -21,6 +21,11 @@
 		BC2783CA1AA1DC2600265684 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2783AC1AA1DC2600265684 /* UIKit.framework */; };
 		BC2783D21AA1DC2600265684 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC2783D01AA1DC2600265684 /* InfoPlist.strings */; };
 		BC2783D41AA1DC2600265684 /* xib___cellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2783D31AA1DC2600265684 /* xib___cellTests.m */; };
+		BC2783DE1AA1DD3A00265684 /* citysMessage.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2783DD1AA1DD3A00265684 /* citysMessage.plist */; };
+		BC2783E21AA1E0D300265684 /* MyCitys.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2783E11AA1E0D300265684 /* MyCitys.m */; };
+		BC2783E71AA1E4CD00265684 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2783E51AA1E4CD00265684 /* MyCell.m */; };
+		BC2783E81AA1E4CD00265684 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2783E61AA1E4CD00265684 /* MyCell.xib */; };
+		BC2783EA1AA1F2D100265684 /* picture1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC2783E91AA1F2D100265684 /* picture1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		BC2783CF1AA1DC2600265684 /* xib自定义cellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xib自定义cellTests-Info.plist"; sourceTree = "<group>"; };
 		BC2783D11AA1DC2600265684 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC2783D31AA1DC2600265684 /* xib___cellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "xib___cellTests.m"; sourceTree = "<group>"; };
+		BC2783DD1AA1DD3A00265684 /* citysMessage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citysMessage.plist; sourceTree = "<group>"; };
+		BC2783E01AA1E0D300265684 /* MyCitys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCitys.h; sourceTree = "<group>"; };
+		BC2783E11AA1E0D300265684 /* MyCitys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCitys.m; sourceTree = "<group>"; };
+		BC2783E41AA1E4CD00265684 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		BC2783E51AA1E4CD00265684 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		BC2783E61AA1E4CD00265684 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		BC2783E91AA1F2D100265684 /* picture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +124,15 @@
 		BC2783AE1AA1DC2600265684 /* xib自定义cell */ = {
 			isa = PBXGroup;
 			children = (
+				BC2783E91AA1F2D100265684 /* picture1.jpg */,
+				BC2783DD1AA1DD3A00265684 /* citysMessage.plist */,
 				BC2783B71AA1DC2600265684 /* AppDelegate.h */,
 				BC2783B81AA1DC2600265684 /* AppDelegate.m */,
 				BC2783BA1AA1DC2600265684 /* Main.storyboard */,
 				BC2783BD1AA1DC2600265684 /* ViewController.h */,
 				BC2783BE1AA1DC2600265684 /* ViewController.m */,
+				BC2783E31AA1E37C00265684 /* cells */,
+				BC2783DF1AA1E0B400265684 /* model */,
 				BC2783C01AA1DC2600265684 /* Images.xcassets */,
 				BC2783AF1AA1DC2600265684 /* Supporting Files */,
 			);
@@ -150,6 +166,25 @@
 				BC2783D01AA1DC2600265684 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC2783DF1AA1E0B400265684 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2783E01AA1E0D300265684 /* MyCitys.h */,
+				BC2783E11AA1E0D300265684 /* MyCitys.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		BC2783E31AA1E37C00265684 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC2783E41AA1E4CD00265684 /* MyCell.h */,
+				BC2783E51AA1E4CD00265684 /* MyCell.m */,
+				BC2783E61AA1E4CD00265684 /* MyCell.xib */,
+			);
+			name = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2783EA1AA1F2D100265684 /* picture1.jpg in Resources */,
 				BC2783C11AA1DC2600265684 /* Images.xcassets in Resources */,
+				BC2783DE1AA1DD3A00265684 /* citysMessage.plist in Resources */,
 				BC2783B31AA1DC2600265684 /* InfoPlist.strings in Resources */,
 				BC2783BC1AA1DC2600265684 /* Main.storyboard in Resources */,
+				BC2783E81AA1E4CD00265684 /* MyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +289,8 @@
 			files = (
 				BC2783BF1AA1DC2600265684 /* ViewController.m in Sources */,
 				BC2783B91AA1DC2600265684 /* AppDelegate.m in Sources */,
+				BC2783E21AA1E0D300265684 /* MyCitys.m in Sources */,
+				BC2783E71AA1E4CD00265684 /* MyCell.m in Sources */,
 				BC2783B51AA1DC2600265684 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +496,7 @@
 				BC2783D91AA1DC2600265684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC2783DA1AA1DC2600265684 /* Build configuration list for PBXNativeTarget "xib自定义cellTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +505,7 @@
 				BC2783DC1AA1DC2600265684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
